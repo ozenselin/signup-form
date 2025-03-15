@@ -164,6 +164,7 @@ input{
     opacity: 0.5;
     width: 100%;
     height: 2.5em;
+    padding-left: 1em;
 }
 
 .form-group{
