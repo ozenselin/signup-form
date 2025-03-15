@@ -1,0 +1,209 @@
+/*
+  Josh's Custom CSS Reset
+  https://www.joshwcomeau.com/css/custom-css-reset/
+*/
+:root{
+    --clr-stormy: #494E6B;
+    --clr-cloud: #98878F;
+    --clr-sunset: #985E6D;
+    --clr-evening: #192231;
+    --clr-font-dark: #101720;
+    --clr-font-light: #F8F8FF;
+}
+
+*, *::before, *::after {
+box-sizing: border-box;
+}
+
+* {
+margin: 0;
+}
+
+body {
+    line-height: calc(1ex, );
+    -webkit-font-smoothing: antialiased;
+    background-color: var(--clr-font-light);
+}
+
+img, picture, video, canvas, svg {
+    display: block;
+    max-width: 100%;
+}
+
+input, button, textarea, select {
+    font: inherit;
+}
+
+p, h1, h2, h3, h4, h5, h6 {
+    overflow-wrap: break-word;
+}
+
+p {
+    text-wrap: pretty;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    text-wrap: balance;
+}
+
+/* transitional font stack */
+body{
+    font-family: Charter, 'Bitstream Charter', 'Sitka Text', Cambria, serif;
+    font-weight: normal;
+}
+
+body{
+    min-height: 100vh;
+    display: flex;
+    flex-direction: row;
+}
+
+.hero{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    background: no-repeat 50% 50% / cover url(assets/background.jpg);
+}
+
+.brand-container{
+    font-size: 4rem;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 6rem;
+    height: fit-content;
+    gap: 0.25em;
+    color: var(--clr-cloud);
+    z-index: 0;
+}
+
+.brand-name {
+    font-family: "Gugi", sans-serif;
+    font-size: 1em;
+}
+
+.brand-logo{
+    height: 0.75em;
+}
+
+.brand-container::before{
+    content: "";
+    opacity: 0.5;
+    background-color: var(--clr-font-dark);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    display: block;
+    z-index: -1;
+}
+
+.hero-title::before{
+    content: "";
+    opacity: 0.3;
+    background-color: var(--clr-font-dark);
+    position: absolute;
+    top: -5%;
+    left: 5%;
+    right: 5%;
+    bottom: -5%;
+    z-index: -1;
+}
+
+.image-credit{
+    text-align: center;
+    padding: 1em 0;
+    color: var(--clr-font-light);
+    margin-top: auto;
+}
+
+.photo-author,
+.photo-source{
+    color: inherit;
+}
+
+.registration{
+    width: 45ch;
+    color: var(--clr-evening);
+    font-size: 1rem;
+    align-self: center;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.form-heading{
+    text-align: center;
+}
+
+label{
+    display: block;
+}
+
+.form-heading-title,
+label{
+    font-weight: 600;
+    text-transform: capitalize;
+    margin-bottom: 0.25em;
+}
+
+.form-heading-description,
+::placeholder{
+    color: var(--clr-cloud);
+    opacity: 1;
+}
+.form-divider{
+    opacity: 0.5;
+    margin: 1em 0;
+}
+
+input{
+    background-color: inherit;
+    border: 1px solid var(--clr-cloud);
+    opacity: 0.5;
+    width: 100%;
+    height: 2.5em;
+}
+
+.form-group{
+    margin-bottom: 0.5em;
+}
+
+.terms-acceptance-container{
+    display: flex;
+    align-items: center;
+    gap: 0.25em;
+}
+
+#terms-acceptance{
+    height: 1em;
+    width: 1em;
+}
+
+label[for="terms-acceptance"]{
+    display: inline;
+    margin: unset;
+    color: var(--clr-cloud);
+    font-weight: unset;
+}
+
+.submit{
+    width: 100%;
+    background-color: var(--clr-stormy);
+    height: 3em;
+    color: var(--clr-font-light);
+    border: 0;
+    margin: 1em 0;
+}
+
+.signin-prompt{
+    text-align: center;
+    color: var(--clr-cloud);
+}
+
+a{
+    text-decoration: none;
+    font-weight: 600;
+    color: var(--clr-evening);
+}
