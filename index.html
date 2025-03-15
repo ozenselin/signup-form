@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Gugi&display=swap');
+    </style>
+</head>
+<body>
+    <div class="hero">
+        <div class="brand-container">
+            <img src="assets/brand-logo.png" alt="Brand Logo" class="brand-logo">
+            <h1 class="brand-name">BRAND</h1>
+        </div>
+        <p class="image-credit">Photo by <span class="attribution"><a href="https://unsplash.com/@cristofer" class="photo-author">Cristofer Maximilian</a> on <a href="https://unsplash.com" class="photo-source">Unsplash</a></span></p>
+    </div>
+    <div class="registration">
+        <div class="form-heading">
+            <h1 class="form-heading-title">Create Your Account!</h1>
+            <p class="form-heading-description">Welcome back! Please enter your details</p>
+        </div>
+        <hr class="form-divider">
+        <form action="#" method="post">
+            <div class="form-group">
+                <label for="first-name">First Name</label>
+                <input type="text" id="first-name" name="first_name" required>
+            </div>
+            <div class="form-group">
+                <label for="last-name">Last Name</label>
+                <input type="text" id="last-name" name="last_name" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+                <label for="tel">Phone Number</label>
+                <input type="tel" id="tel" name="tel" required>
+            </div>
+            <div class="form-group">
+                <label for="password">Password</label>
+                <input type="password" id="password" name="password" required>
+            </div>
+            <div class="form-group">
+                <label for="confirm-password">Confirm Password</label>
+                <input type="password" id="confirm-password" name="confirm-password" required>
+            </div>
+            <div class="form-group terms-acceptance-container">
+                <input type="checkbox" id="terms-acceptance" name="acceptance">
+                <label for="terms-acceptance">I accepted all <a href="">terms & conditions</a>.</label>
+            </div>
+            <button class="submit" type="submit"><span class="submit-text">Create Account</span></button>
+        </form>
+        <p class="signin-prompt">Already have an account? <a href="" class="signin-link">Sign in</a></p>
+    </div>
+</body>
