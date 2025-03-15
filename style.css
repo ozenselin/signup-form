@@ -208,3 +208,26 @@ a{
     font-weight: 600;
     color: var(--clr-evening);
 }
+
+input:focus-visible{
+    outline: 0;
+}
+
+
+form{
+    --clr-success: rgb(0, 128, 0);
+    --clr-warning: rgb(255, 165, 0);
+    --clr-error: rgb(255, 0 ,0);
+}
+
+input:not(:placeholder-shown):valid{
+    border-color: var(--clr-success);
+}
+
+input:not(:placeholder-shown):invalid{
+    border-color: var(--clr-error);
+}
+
+input:focus:invalid{
+    border-color: var(--clr-warning);
+}
